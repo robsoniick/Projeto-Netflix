@@ -1,0 +1,117 @@
+:root{
+    --vermelho: #E50914;  
+    --preta: #141414;   
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*elementos base*/
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: arial black, times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+    .filme-principal{
+        font-size: 16px;
+        background: linear-gradient(rgba(0,0,0,.10), rgba(0,0,0,100%)), url('/img/capa\ harry\ potter.jpg'); /*esse background linear deixa a imagem fosca*/
+
+        height: 600px;  /*altera o tamho do sutitulo, sinopse e posiomento dos butoes*/
+        background-size: cover;
+        
+        display: flex; /*sempre joga os elementos em padrão em linha*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .filme-principal .descricao{
+        margin-top: 1%;
+        margin-bottom: 40px;
+
+    }
+
+    .titulo{
+        margin-top: 20%; /*difente do px a % calcula exatamente o angulo que vc quer manter*/
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    .botao{
+        background-color: rgba(0,0,0,.50);
+        border: none;
+        color: white;
+
+    
+        padding: 15px 10px; /*no padding quando coloco dois valores (primeiro para cima e baixo) o segundo (um lado e outro)*/
+        margin-right: 15px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: .3s ease all; /*animação no butão */
+    }
+
+    .botao:hover{
+        background-color: white; /*inverter os boões quando o cursor estiver em cima*/
+        color: black;
+    }
+
+    .botao i{
+        margin-right: 8px; /*espaço entre o botão i e o que vem depois (mais informações*/
+    }
+
+    .container {
+        margin-left: 30px; /*levar toda parte escrita para esquerda*/
+        
+    }
+
+    
+    .filme-principal .container{
+        width: 60%; /*para a sinopse não ultrapassar os limites da tela*/
+    }
+
+    .box-filme{    /*formantando as fotos miniatura em tamanho e largura*/
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .carrosel-filmes{ /*dar um distancia de uma foto miniatura para outra*/
+        margin-top: 5px;
+    }
+
+
+
